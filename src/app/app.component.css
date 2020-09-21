@@ -1,0 +1,39 @@
+
+.clock-container{
+  font-size:20px;
+  /*line-height:25px;*/
+  color: black;
+  height:100%;
+  font-weight: 500;
+  border-style: solid;
+  border-width: 8px;
+  text-align: center;
+ font-family: Arial;
+}
+
+.clock2 {
+  top:30%;
+  width:15%;
+  height:100%;
+  margin:30px auto;
+  padding:30px;
+  text-align: center;
+  align: center;
+}
+
+.format {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  width: 30px;
+  font-size:19px;
+}
+
