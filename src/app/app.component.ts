@@ -11,12 +11,12 @@ import { Component, LOCALE_ID, OnInit} from '@angular/core';
 })
 
 export class AppComponent implements OnInit{
-  public date: Date = new Date();
-  public hour: any;
-  public minute: any;
-  public second: any;
-  public ampm: string;
-  timer;
+  private date: Date = new Date();
+  private hour: any;
+  private minute: any;
+  private second: any;
+  private ampm: string;
+  private timer;
   // tslint:disable-next-line:ban-types
   flag: Boolean = true;
   constructor() {}
