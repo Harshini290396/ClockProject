@@ -28,8 +28,8 @@ export class AppComponent implements OnInit{
     this.ampm = this.date.getHours() > 12 ? 'PM' : 'AM';
     this.timer = setInterval(() => {
       if (this.flag) {
-        this.date = new Date();
-        this.second = this.second + 1;
+        // this.date = new Date();
+        this.second += 1;
         if (this.hour >= 12) {
           this.hour = this.hour - 12;
           // tslint:disable-next-line:triple-equals
@@ -40,7 +40,7 @@ export class AppComponent implements OnInit{
           this.hour = this.hour + 1;
         }
         if (this.second >= 60) {
-          this.second = 0;
+          this.second = this.second - 60;
           this.minute = this.minute + 1;
         }
       }

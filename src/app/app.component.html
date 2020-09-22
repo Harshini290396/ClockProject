@@ -10,11 +10,11 @@
   <div>London Clock</div><br>
   <div class="format">
     <span (click)="stop()" *ngIf="flag">{{ hour }} : </span>
-    <span *ngIf="!flag"> <input [(ngModel)]="hour" (keyup.enter)="stop()"></span>
+    <span *ngIf="!flag"> <input [(ngModel)]="hour" type="number" (keyup.enter)="stop()"></span>
     <span (click)="stop()" *ngIf="flag">{{ minute }} : </span>
-    <span *ngIf="!flag"> <input [(ngModel)]="minute" (keyup.enter)="stop()"></span>
+    <span *ngIf="!flag"> <input [(ngModel)]="minute" type="number" (keyup.enter)="stop()"></span>
     <span (click)="stop()" *ngIf="flag">{{ second }} : </span>
-    <span *ngIf="!flag"> <input [(ngModel)]="second" (keyup.enter)="stop()"></span>
+    <span *ngIf="!flag"> <input [(ngModel)]="second" type="number" (keyup.enter)="stop()"></span>
     <span (click)="stop()" *ngIf="flag">{{ ampm }}</span>
   </div>
 </div>
